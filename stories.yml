@@ -1,0 +1,52 @@
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: project and node details
+  steps:
+  - intent: showProjectInformation
+  - action: action_give_project_information
+  - intent: showDetailInfoBundles
+  - action: action_show_detail_info_bundles
+  - intent: showNodeInformation
+  - action: action_show_node_information
+  - intent: showAllNodes
+  - action: action_show_all_nodes
+  - intent: count_components
+  - action: action_count_all_nodes
+  - intent: showLargestCompilationUnit
+  - action: action_show_largest_compilationUnit
+
+- story: direction
+  steps:
+  - intent: zoom_in
+  - action: action_zoom_in
+  - intent: zoom_out
+  - action: action_zoom_out
+  - intent: move_up
+  - action: action_move_up
+  - intent: move_down
+  - action: action_move_down
+  - intent: move_left
+  - action: action_move_left
+  - intent: move_right
+  - action: action_move_right
+
+- story: component details
+  steps:
+  - intent: select_component
+  - action: action_select_component
+  - intent: deselect_component
+  - action: action_deselect_component
+  - intent: select_biggest_component
+  - action: action_get_biggest_component
+  - intent: select_smallest_component
+  - action: action_get_smallest_component
+  - intent: summarize_information
+  - action: action_summarize_information
