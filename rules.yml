@@ -1,0 +1,11 @@
+- rule: Say 'hello' whenever the user greets
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: Say zoomin when the user says zoom
+  steps:
+    - intent: direction
+    - action: utter_direction
+
+
